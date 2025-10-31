@@ -1,0 +1,172 @@
+.hashyield-app {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.hashyield-panel {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 20px 30px -24px rgba(15, 23, 42, 0.4);
+}
+
+.hashyield-panel h2,
+.hashyield-panel h3 {
+  margin: 0 0 0.5rem;
+  color: #0f172a;
+  font-weight: 700;
+}
+
+.panel-subtitle {
+  margin: 0 0 1.5rem;
+  color: #475569;
+  max-width: 560px;
+}
+
+.panel-error {
+  margin-bottom: 1.5rem;
+  padding: 0.75rem 1rem;
+  border-radius: 12px;
+  background-color: rgba(248, 113, 113, 0.12);
+  color: #b91c1c;
+  font-size: 0.95rem;
+}
+
+.stats-grid,
+.secondary-grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.stats-grid {
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.secondary-grid {
+  margin-top: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.stat-card {
+  border-radius: 18px;
+  padding: 1.5rem;
+  border: 1px solid #e2e8f0;
+  background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.stat-card.secondary {
+  background: #0f172a;
+  border-color: #0f172a;
+}
+
+.stat-label {
+  font-size: 0.85rem;
+  color: #64748b;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.stat-value {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.stat-value.alt {
+  color: #f1f5f9;
+  word-break: break-all;
+  font-size: 1rem;
+}
+
+.action-form {
+  display: flex;
+  align-items: flex-end;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+}
+
+.action-form label {
+  flex: 1 1 240px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  color: #0f172a;
+  font-weight: 600;
+}
+
+.action-form input {
+  border-radius: 14px;
+  border: 1px solid #cbd5f5;
+  padding: 0.85rem 1rem;
+  font-size: 1rem;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.action-form input:focus {
+  outline: none;
+  border-color: #4f46e5;
+  box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.18);
+}
+
+.action-form button,
+.claim-button {
+  border: none;
+  border-radius: 14px;
+  padding: 0.95rem 1.6rem;
+  background: linear-gradient(135deg, #4f46e5, #6366f1);
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.action-form button:disabled,
+.claim-button:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+  box-shadow: none;
+  transform: none;
+}
+
+.action-form button:not(:disabled):hover,
+.claim-button:not(:disabled):hover {
+  transform: translateY(-1px);
+  box-shadow: 0 12px 20px -14px rgba(99, 102, 241, 0.7);
+}
+
+.claim-header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  margin-bottom: 1.25rem;
+}
+
+.claim-header p {
+  margin: 0;
+  color: #475569;
+}
+
+.loading-indicator {
+  text-align: center;
+  color: #475569;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 680px) {
+  .hashyield-panel {
+    padding: 1.5rem;
+  }
+
+  .stat-card {
+    padding: 1.25rem;
+  }
+}

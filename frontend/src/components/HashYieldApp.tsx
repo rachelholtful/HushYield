@@ -63,7 +63,7 @@ export function HashYieldApp() {
   const [isWithdrawing, setIsWithdrawing] = useState(false);
   const [isClaiming, setIsClaiming] = useState(false);
 
-  const hasContract = CONTRACT_ADDRESS !== ZERO_ADDRESS;
+  const hasContract = true;
   const canInteract = Boolean(isConnected && address && hasContract);
 
   const refreshSnapshot = useCallback(async () => {

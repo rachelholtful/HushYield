@@ -8,7 +8,7 @@ import { CONTRACT_ADDRESS, HASH_YIELD_ABI, CETH_ABI } from '../config/contracts'
 import { useEthersSigner } from '../hooks/useEthersSigner';
 import '../styles/HashYieldApp.css';
 
-const ZERO_ADDRESS = '0x0000000000000000000000000000000000000000';
+// const ZERO_ADDRESS = '0x0000000000000000000000000000000000000000';
 
 type StakeSnapshot = {
   amount: bigint;
